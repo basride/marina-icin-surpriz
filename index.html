@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#100e25">
+<meta name="description" content="Маленькая вселенная, созданная с любовью для Марины.">
+<title>Для тебя, Марина ✦</title>
+<style>
+:root{
+  color-scheme:dark;
+  --night:#100e25;--night2:#17152f;--ink:#fff8fd;--muted:#cfc6e5;
+  --pink:#f4b9d4;--pink2:#e8a0c8;--gold:#ffe7b1;--lav:#c5baff;
+  --line:rgba(255,255,255,.13);--glass:rgba(255,255,255,.055);
+  --serif: Georgia,"Times New Roman",serif;
+  --sans: "Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;min-height:100vh;overflow-x:hidden;color:var(--ink);font-family:var(--sans);background:radial-gradient(ellipse at 8% 4%,#483064 0,transparent 36%),radial-gradient(ellipse at 96% 30%,#43264d 0,transparent 30%),radial-gradient(ellipse at 52% 100%,#272049 0,transparent 42%),linear-gradient(145deg,#0d0d21 0%,#17142d 51%,#1c1631 100%);}
+body:before,body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1}
+body:before{opacity:.72;background-image:radial-gradient(1px 1px at 7% 14%,#fff 98%,transparent),radial-gradient(1px 1px at 14% 68%,#fbe7c6 98%,transparent),radial-gradient(1.3px 1.3px at 27% 33%,#fff 98%,transparent),radial-gradient(1px 1px at 43% 9%,#fff 98%,transparent),radial-gradient(1.5px 1.5px at 62% 27%,#f8d2e3 98%,transparent),radial-gradient(1px 1px at 79% 13%,#fff 98%,transparent),radial-gradient(1.3px 1.3px at 91% 66%,#fff 98%,transparent),radial-gradient(1px 1px at 69% 88%,#fff 98%,transparent),radial-gradient(1px 1px at 36% 93%,#d7c8ff 98%,transparent);}
+body:after{background:linear-gradient(180deg,transparent 70%,rgba(10,8,24,.26));}
+.aurora{position:fixed;width:430px;height:430px;border-radius:50%;filter:blur(105px);opacity:.17;pointer-events:none;z-index:-1;animation:auroraDrift 18s ease-in-out infinite alternate}
+.aurora.one{background:#c35da7;top:-180px;left:-210px}.aurora.two{background:#6864d7;right:-260px;top:39%;animation-delay:-7s}.aurora.three{background:#8d5b9d;width:300px;height:300px;left:30%;bottom:-230px;animation-delay:-11s}
+@keyframes auroraDrift{to{transform:translate3d(45px,32px,0) scale(1.13)}}
+main{width:min(100% - 36px,1000px);margin:0 auto;padding:26px 0 58px}
+.masthead{display:flex;align-items:center;justify-content:center;gap:10px;margin:4px 0 35px;color:#e7d9ef;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;text-align:center}
+.masthead .seal{width:27px;height:27px;display:grid;place-items:center;border:1px solid #f0cade55;border-radius:50%;color:var(--pink);font-size:.9rem;box-shadow:0 0 22px #f7b5dc18}
+.hero{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(240px,.82fr);align-items:center;gap:36px;min-height:400px;padding:clamp(25px,5.5vw,58px);border:1px solid rgba(255,255,255,.14);border-radius:34px;background:linear-gradient(125deg,rgba(255,255,255,.09),rgba(255,255,255,.025) 55%,rgba(202,154,223,.055));box-shadow:0 25px 95px rgba(5,3,18,.22),inset 0 1px rgba(255,255,255,.08);backdrop-filter:blur(18px);overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 78% 48%,rgba(197,164,255,.11),transparent 32%),radial-gradient(circle at 10% 90%,rgba(244,185,212,.07),transparent 34%)}
+.eyebrow{display:flex;align-items:center;gap:10px;color:#e7c9dd;text-transform:uppercase;letter-spacing:.16em;font-size:.68rem;margin-bottom:18px}.eyebrow:before{content:"";width:27px;height:1px;background:linear-gradient(90deg,var(--pink),transparent)}
+h1{font:400 clamp(2.8rem,7.5vw,5.45rem)/.99 var(--serif);letter-spacing:-.055em;margin:0;color:#fff8fd;text-wrap:balance}h1 em{font-weight:400;color:var(--pink);text-shadow:0 0 40px #e8a0c82d}
+.lead{max-width:510px;color:#ded5ea;font-size:1rem;line-height:1.9;margin:24px 0 0}.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:29px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:13px 18px;border:1px solid rgba(255,255,255,.17);border-radius:999px;color:#fff7fc;background:rgba(255,255,255,.055);font:500 .92rem var(--sans);text-decoration:none;cursor:pointer;transition:transform .25s ease,background .25s ease,border-color .25s ease,box-shadow .25s ease;backdrop-filter:blur(10px)}
+.btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.10);border-color:#f2cde1aa}.btn:active{transform:translateY(0) scale(.985)}.btn:focus-visible,.star:focus-visible{outline:2px solid var(--gold);outline-offset:4px}.btn.primary{color:#29182c;font-weight:650;background:linear-gradient(115deg,#f5c2d9,#d8c3ff 90%);border-color:transparent;box-shadow:0 8px 30px rgba(214,155,215,.2)}.btn.primary:hover{box-shadow:0 12px 38px rgba(214,155,215,.3);background:linear-gradient(115deg,#ffd0e3,#e0d3ff 90%)}.btn:disabled{opacity:.65;cursor:wait;transform:none}
+.cosmos{position:relative;display:grid;place-items:center;min-height:260px;isolation:isolate}.orbit{position:absolute;width:min(100%,300px);aspect-ratio:1;border:1px solid rgba(255,240,250,.13);border-radius:50%;transform:rotate(-24deg) scaleY(.47);box-shadow:0 0 26px rgba(231,190,246,.035)}.orbit.two{width:min(83%,250px);transform:rotate(38deg) scaleY(.56);border-color:rgba(255,223,182,.12)}
+.moon{position:relative;width:clamp(145px,22vw,205px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 32% 25%,#fff8ed 0%,#f6d8e7 20%,#d4badf 48%,#786caa 78%,#4a467a 100%);box-shadow:inset -18px -22px 42px rgba(31,23,67,.42),inset 8px 8px 22px rgba(255,255,255,.55),0 0 50px rgba(228,174,221,.19),0 0 125px rgba(175,154,240,.11);animation:moonFloat 6s ease-in-out infinite}
+.moon:before{content:"";position:absolute;inset:-14px;border:1px solid rgba(255,230,244,.23);border-radius:50%;box-shadow:0 0 30px rgba(255,224,241,.06)}.moon:after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 32% 25%,transparent 0 34%,rgba(35,24,72,.08) 60%,rgba(23,17,53,.35) 100%)}.moon .crescent{position:relative;z-index:1;font-size:3.15rem;filter:drop-shadow(0 4px 13px rgba(255,255,255,.35));transform:translateY(-2px)}
+.mini-star{position:absolute;color:#fff1c6;text-shadow:0 0 12px #ffe7b1;animation:twinkle 3.4s ease-in-out infinite}.mini-star.s1{top:18%;left:15%;font-size:1.3rem}.mini-star.s2{right:11%;top:26%;font-size:.9rem;animation-delay:-1.2s}.mini-star.s3{bottom:15%;left:21%;font-size:1rem;animation-delay:-2s}.mini-star.s4{right:18%;bottom:18%;font-size:1.4rem;animation-delay:-.6s}
+@keyframes moonFloat{50%{transform:translateY(-9px)}}@keyframes twinkle{0%,100%{opacity:.48;transform:scale(.82)}50%{opacity:1;transform:scale(1.13)}}
+.section{margin-top:28px}.letter{max-width:820px;margin:26px auto 0}.panel{position:relative;padding:clamp(24px,5vw,43px);border:1px solid rgba(255,255,255,.12);border-radius:28px;background:linear-gradient(135deg,rgba(255,255,255,.072),rgba(255,255,255,.024));box-shadow:0 18px 60px rgba(5,3,18,.16);backdrop-filter:blur(15px)}.section-kicker{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#d8b9d2;margin-bottom:13px}.panel h2,.section-title{font:400 clamp(1.65rem,4vw,2.35rem)/1.16 var(--serif);letter-spacing:-.025em;margin:0;color:#fff8fd}.panel p{font-size:.98rem;line-height:1.95;color:#ded6e9;margin:14px 0}.signature{font:italic 1.15rem/1.7 var(--serif)!important;color:var(--pink)!important;margin-top:23px!important}.hidden{display:none!important}
+.constellation{padding:clamp(24px,5vw,42px);text-align:center}.section-title{text-align:center}.section-intro{max-width:580px;margin:13px auto 0;color:#d5cbe4;line-height:1.8;font-size:.95rem}.stars{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:28px 0 12px}.star{position:relative;width:72px;height:72px;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(255,231,177,.2);background:radial-gradient(circle,rgba(255,231,177,.11),rgba(255,255,255,.018) 68%);color:#ffe8bd;font-size:2rem;cursor:pointer;box-shadow:inset 0 1px rgba(255,255,255,.08);transition:transform .25s ease,box-shadow .25s ease,background .25s ease}.star:before{content:"";position:absolute;inset:6px;border:1px solid rgba(255,255,255,.055);border-radius:50%}.star:hover,.star.selected{transform:translateY(-5px) rotate(8deg);background:radial-gradient(circle,rgba(255,194,223,.22),rgba(255,255,255,.02) 70%);box-shadow:0 0 30px rgba(245,190,222,.14),inset 0 1px rgba(255,255,255,.12)}.star-msg{min-height:56px;max-width:600px;margin:17px auto 0!important;color:#ffeaf4!important;font:italic 1.15rem/1.7 var(--serif);opacity:.92}
+.comfort{max-width:820px;margin:28px auto 0;text-align:center}.comfort .btn{margin-top:6px}.comfort-box{display:none;margin:17px auto 0;padding:25px;border:1px solid rgba(255,203,229,.15);border-radius:23px;background:rgba(255,255,255,.035);max-width:610px}.comfort-box.show{display:block;animation:softAppear .65s ease both}.comfort-box p{color:#e6ddeb;line-height:1.9}.breath{width:98px;height:98px;border:1px solid rgba(246,205,227,.27);background:radial-gradient(circle,rgba(246,205,227,.12),rgba(246,205,227,.015));border-radius:50%;margin:21px auto;display:grid;place-items:center;color:#ffe5f0;font-size:.86rem;line-height:1.5;animation:breathe 8s ease-in-out infinite;box-shadow:0 0 35px rgba(244,185,212,.06)}@keyframes breathe{0%,100%{transform:scale(.84);opacity:.72}50%{transform:scale(1.08);opacity:1}}@keyframes softAppear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.quote{position:relative;text-align:center;padding:52px 20px 36px}.quote:before{content:"“";display:block;font:5.5rem/.8 var(--serif);color:rgba(244,185,212,.58);margin-bottom:10px}.bigquote{font:italic clamp(1.6rem,4.7vw,2.55rem)/1.52 var(--serif);color:#fff0f7;max-width:760px;margin:0 auto;text-wrap:balance}.quote small{display:block;margin-top:19px;color:#cfc0df;letter-spacing:.12em;text-transform:uppercase;font-size:.68rem}.finale{margin-top:9px;text-align:center;padding:0 0 8px}.finale .caption{max-width:520px;margin:0 auto 22px;color:#cec4dd;font-size:.9rem;line-height:1.8}.footer{text-align:center;color:#bfb2d1;font-size:.78rem;line-height:1.9;margin-top:40px;padding:0 12px}.heart{display:inline-block;color:#ffb7d1;animation:heartbeat 1.9s ease-in-out infinite}@keyframes heartbeat{0%,100%{transform:scale(1)}13%{transform:scale(1.2)}26%{transform:scale(1)}}
+/* Cinematic star shower: the message stays hidden until every shooting star has finished. */
+.star-stage{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:30;contain:strict}.flying-star{position:fixed;left:var(--x);top:var(--y);z-index:31;pointer-events:none;color:var(--gold);font-size:var(--size);line-height:1;text-shadow:0 0 8px rgba(255,248,221,.98),0 0 18px rgba(255,198,225,.78),0 0 35px rgba(189,170,255,.6);opacity:0;will-change:transform,opacity;animation:starFlight var(--duration) cubic-bezier(.15,.62,.25,1) var(--delay) both}
+.flying-star:after{content:"";position:absolute;width:var(--tail);height:2px;right:58%;top:50%;border-radius:99px;transform:translateY(-50%) rotate(var(--angle));transform-origin:right center;background:linear-gradient(90deg,transparent,rgba(255,233,185,.15) 18%,rgba(255,244,218,.95));box-shadow:0 0 8px rgba(255,221,181,.45)}
+@keyframes starFlight{0%{opacity:0;transform:translate3d(0,0,0) scale(.28) rotate(0deg)}10%{opacity:1}68%{opacity:1}100%{opacity:0;transform:translate3d(var(--tx),var(--ty),0) scale(1.36) rotate(var(--rot))}}
+.love-message{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:24px;pointer-events:none;opacity:0;visibility:hidden;background:radial-gradient(ellipse at center,rgba(25,15,42,.74),rgba(10,8,23,.36) 55%,rgba(10,8,23,.08));backdrop-filter:blur(0);transition:opacity .5s ease,visibility .5s ease}
+.love-message.show{opacity:1;visibility:visible;backdrop-filter:blur(3px)}.message-card{width:min(900px,100%);text-align:center;opacity:0;transform:translateY(20px) scale(.94)}.love-message.show .message-card{animation:messageReveal 5.1s cubic-bezier(.2,.7,.2,1) both}.message-ornament{display:block;color:var(--gold);font-size:1.5rem;letter-spacing:.65em;margin:0 0 24px;padding-left:.65em;text-shadow:0 0 20px #ffe7b1a8}.message-text{display:block;font:400 clamp(2.4rem,9.5vw,6.3rem)/1.06 var(--serif);letter-spacing:-.045em;color:#fff9fd;text-wrap:balance;text-shadow:0 0 8px rgba(255,255,255,.8),0 0 28px rgba(255,184,211,.74),0 0 72px rgba(201,158,255,.45)}.message-sub{display:block;margin-top:24px;color:#f0ddec;font-size:clamp(.8rem,2vw,1rem);letter-spacing:.15em;text-transform:uppercase;line-height:1.8}
+@keyframes messageReveal{0%{opacity:0;transform:translateY(20px) scale(.94);filter:blur(8px)}12%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}76%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}100%{opacity:0;transform:translateY(-9px) scale(1.025);filter:blur(2px)}}
+@media(max-width:720px){main{width:min(100% - 26px,620px);padding-top:19px}.masthead{font-size:.59rem;letter-spacing:.14em;margin-bottom:22px}.hero{grid-template-columns:1fr;gap:8px;min-height:0;padding:30px 23px 25px;border-radius:27px;text-align:center}.hero .eyebrow{justify-content:center;margin-bottom:15px}.hero .eyebrow:before{display:none}.hero h1{font-size:clamp(3rem,12vw,4.7rem)}.lead{font-size:.95rem;line-height:1.8;margin:19px auto 0}.hero-actions{justify-content:center;margin-top:24px}.cosmos{grid-row:1;min-height:220px;margin:-3px 0 8px}.moon{width:148px}.orbit{width:215px}.orbit.two{width:178px}.moon .crescent{font-size:2.7rem}.section{margin-top:19px}.panel{border-radius:23px}.constellation{padding:29px 19px}.stars{gap:13px}.star{width:64px;height:64px}.quote{padding:42px 8px 30px}.quote:before{font-size:4.5rem}.finale .btn{max-width:100%;white-space:normal}.footer{margin-top:31px}.message-ornament{margin-bottom:20px}.message-sub{letter-spacing:.09em}}
+@media(max-width:390px){main{width:calc(100% - 20px)}.hero{padding:25px 17px 22px}.hero-actions{gap:8px}.btn{padding:12px 14px;font-size:.86rem}.stars{gap:9px}.star{width:58px;height:58px}.message-text{font-size:2.5rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.aurora,.moon,.mini-star,.heart,.breath{animation:none!important}.flying-star{animation-duration:.9s!important;animation-delay:0s!important}.love-message.show .message-card{animation-duration:3s!important}.btn,.star{transition:none}}
+</style>
+</head>
+<body>
+<div class="aurora one" aria-hidden="true"></div><div class="aurora two" aria-hidden="true"></div><div class="aurora three" aria-hidden="true"></div>
+<div class="star-stage" id="starStage" aria-hidden="true"></div>
+<div class="love-message" id="loveMessage" aria-live="polite" aria-atomic="true">
+  <div class="message-card">
+    <span class="message-ornament" aria-hidden="true">✦　✧　♡　✧　✦</span>
+    <span class="message-text">Seni seviyorum<br>hanımım</span>
+    <span class="message-sub">Ты — моё самое нежное чудо</span>
+  </div>
+</div>
+<main>
+  <div class="masthead"><span class="seal" aria-hidden="true">✦</span> маленькая вселенная только для тебя</div>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">для самого дорогого человека</div>
+      <h1>Для тебя,<br><em>Марина.</em></h1>
+      <p class="lead">Я не знаю, насколько тяжёлым был сегодняшний день. Но мне хочется подарить тебе несколько тихих минут, в которых не нужно никуда спешить и ничего изображать. Просто побудь здесь. Это маленькое место — для тебя.</p>
+      <div class="hero-actions">
+        <button class="btn primary" id="openLetter"><span aria-hidden="true">✉</span> Открыть письмо</button>
+        <button class="btn" id="hugBtn"><span aria-hidden="true">♡</span> Обнять мысленно</button>
+      </div>
+    </div>
+    <div class="cosmos" aria-label="Луна среди звёзд" role="img">
+      <div class="orbit"></div><div class="orbit two"></div>
+      <span class="mini-star s1">✦</span><span class="mini-star s2">✧</span><span class="mini-star s3">✧</span><span class="mini-star s4">✦</span>
+      <div class="moon"><span class="crescent" aria-hidden="true">☾</span></div>
+    </div>
+  </section>
+
+  <section class="panel letter hidden section" id="letter" aria-live="polite">
+    <div class="section-kicker">письмо для тебя · от сердца</div>
+    <h2>Несколько слов, которые я хочу, чтобы ты знала</h2>
+    <p>Марина, милая, пожалуйста, помни: тебе не обязательно всегда быть сильной. Ты имеешь право уставать, грустить, молчать и просто немного отдохнуть от всего.</p>
+    <p>Я не могу одним сообщением решить все проблемы, которые тебя тревожат. Но я хочу, чтобы ты знала: тебе не нужно притворяться, что всё хорошо, чтобы заслужить нежность, заботу и тепло.</p>
+    <p>Пусть сегодня у тебя получится хотя бы что-то маленькое и хорошее: вкусный чай, любимая песня, тёплый плед, спокойный вечер или улыбка без причины. Не нужно исправлять весь мир за один день. Достаточно бережно отнестись к себе.</p>
+    <p>И даже в те дни, когда ты сама не видишь в себе ничего прекрасного, это не значит, что прекрасного в тебе стало меньше.</p>
+    <p class="signature">С теплом, нежностью и самыми добрыми мыслями о тебе. ♡</p>
+  </section>
+
+  <section class="panel constellation section">
+    <div class="section-kicker" style="text-align:center">три маленьких напоминания</div>
+    <h2 class="section-title">Звёзды, которые берегут твои слова</h2>
+    <p class="section-intro">Нажми на любую звезду. Пусть она напомнит тебе о чём-то важном именно тогда, когда это нужно.</p>
+    <div class="stars">
+      <button class="star" data-message="Тебе не нужно заслуживать отдых. Ты уже заслужила право передохнуть. ♡" aria-label="Первая звезда">✦</button>
+      <button class="star" data-message="Даже самая длинная ночь однажды становится утром. Не торопи себя. ✧" aria-label="Вторая звезда">✧</button>
+      <button class="star" data-message="В мире много красивых вещей, но такой, как ты, больше нет. Береги себя, Марина. ✨" aria-label="Третья звезда">✦</button>
+    </div>
+    <p class="star-msg" id="starMessage" aria-live="polite">Здесь спрятаны тёплые слова. Открой одно из них.</p>
+  </section>
+
+  <section class="comfort section">
+    <button class="btn" id="comfortBtn">Если сейчас особенно тяжело… <span aria-hidden="true">♡</span></button>
+    <div class="comfort-box" id="comfortBox" aria-live="polite">
+      <p>Давай на минутку ничего не будем решать. Просто побудь здесь. Медленно вдохни… и так же медленно выдохни. Тебе не нужно торопиться. Один вдох, одна минута, один маленький шаг — этого достаточно.</p>
+      <div class="breath">вдох<br>и выдох</div>
+      <p>Ты важна не только тогда, когда улыбаешься. Ты важна всегда. ♡</p>
+    </div>
+  </section>
+
+  <section class="quote">
+    <p class="bigquote">«Если сегодня не хватает света, пусть хотя бы одна маленькая звезда напомнит тебе: темнота не навсегда».</p>
+    <small>для Марины · с нежностью</small>
+  </section>
+
+  <section class="finale">
+    <p class="caption">А теперь загадай маленькое желание и посмотри на небо. Я приготовил для тебя один звёздный сюрприз.</p>
+    <button class="btn primary" id="starsBtn"><span aria-hidden="true">✧</span> Пусть летят звёзды <span aria-hidden="true">✦</span></button>
+  </section>
+  <footer class="footer">Эта маленькая вселенная создана с теплом специально для тебя.<br><span class="heart">♥</span> Тебе не обязательно улыбаться прямо сейчас. Просто будь собой. <span class="heart">♥</span></footer>
+</main>
+<script>
+'use strict';
+const letter = document.getElementById('letter');
+const openLetter = document.getElementById('openLetter');
+const hugBtn = document.getElementById('hugBtn');
+const comfortBtn = document.getElementById('comfortBtn');
+const comfortBox = document.getElementById('comfortBox');
+const starsBtn = document.getElementById('starsBtn');
+const starStage = document.getElementById('starStage');
+const loveMessage = document.getElementById('loveMessage');
+let revealTimer = 0;
+let resetTimer = 0;
+let sequenceRunning = false;
+
+openLetter.addEventListener('click', () => {
+  letter.classList.toggle('hidden');
+  const opened = !letter.classList.contains('hidden');
+  openLetter.innerHTML = opened ? '<span aria-hidden="true">♡</span> Вернуться к странице' : '<span aria-hidden="true">✉</span> Открыть письмо';
+  if (opened) letter.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+function spawnPetals(count) {
+  const symbols = ['✦', '✧', '♡', '✿'];
+  for (let i = 0; i < count; i++) {
+    const el = document.createElement('span');
+    el.className = 'flying-star';
+    el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    el.style.left = Math.random() * 100 + 'vw';
+    el.style.top = '-25px';
+    el.style.setProperty('--x', Math.random() * 100 + 'vw');
+    el.style.setProperty('--y', '-25px');
+    el.style.setProperty('--tx', ((Math.random() - .5) * 20) + 'vw');
+    el.style.setProperty('--ty', '115vh');
+    el.style.setProperty('--rot', (Math.random() * 360) + 'deg');
+    el.style.setProperty('--angle', '15deg');
+    el.style.setProperty('--size', (13 + Math.random() * 20) + 'px');
+    el.style.setProperty('--tail', '0px');
+    el.style.setProperty('--duration', (3 + Math.random() * 2) + 's');
+    el.style.setProperty('--delay', (Math.random() * .35) + 's');
+    el.style.color = ['#ffe6ad', '#ffc6df', '#e0d1ff'][Math.floor(Math.random() * 3)];
+    starStage.appendChild(el);
+    el.addEventListener('animationend', () => el.remove(), { once: true });
+  }
+}
+
+hugBtn.addEventListener('click', () => {
+  const original = '<span aria-hidden="true">♡</span> Обнять мысленно';
+  hugBtn.textContent = 'Обнимаю крепко-крепко ♡';
+  spawnPetals(15);
+  window.setTimeout(() => { hugBtn.innerHTML = original; }, 2600);
+});
+
+document.querySelectorAll('.star').forEach((star) => {
+  star.addEventListener('click', () => {
+    document.getElementById('starMessage').textContent = star.dataset.message;
+    document.querySelectorAll('.star').forEach((s) => s.classList.remove('selected'));
+    star.classList.add('selected');
+  });
+});
+
+comfortBtn.addEventListener('click', () => {
+  comfortBox.classList.toggle('show');
+  const opened = comfortBox.classList.contains('show');
+  comfortBtn.innerHTML = opened ? 'Давай побудем здесь ещё немного ♡' : 'Если сейчас особенно тяжело… <span aria-hidden="true">♡</span>';
+  if (opened) comfortBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+function randomBetween(min, max) { return min + Math.random() * (max - min); }
+function clearStarShow() {
+  window.clearTimeout(revealTimer);
+  window.clearTimeout(resetTimer);
+  starStage.querySelectorAll('.flying-star').forEach((node) => node.remove());
+  loveMessage.classList.remove('show');
+  sequenceRunning = false;
+  starsBtn.disabled = false;
+  starsBtn.innerHTML = '<span aria-hidden="true">✧</span> Пусть летят звёзды <span aria-hidden="true">✦</span>';
+}
+
+function launchStars() {
+  if (sequenceRunning) return;
+  sequenceRunning = true;
+  window.clearTimeout(revealTimer);
+  window.clearTimeout(resetTimer);
+  loveMessage.classList.remove('show');
+  starStage.querySelectorAll('.flying-star').forEach((node) => node.remove());
+  starsBtn.disabled = true;
+  starsBtn.textContent = 'Загадай желание…';
+
+  const count = window.innerWidth < 600 ? 38 : 58;
+  let lastStarEnd = 0;
+  const palette = ['#ffe7b1', '#ffc6df', '#ddd1ff', '#fff9f1'];
+  for (let i = 0; i < count; i++) {
+    const star = document.createElement('span');
+    star.className = 'flying-star';
+    star.textContent = ['✦', '✧', '⋆', '✶'][Math.floor(Math.random() * 4)];
+    const x = randomBetween(3, 97);
+    const y = randomBetween(6, 94);
+    const dx = randomBetween(-70, 70);
+    const dy = randomBetween(-57, 57);
+    const duration = randomBetween(1.45, 2.5);
+    const delay = randomBetween(0, .82);
+    const angle = Math.atan2(dy * window.innerHeight / 100, dx * window.innerWidth / 100) * 180 / Math.PI;
+    star.style.setProperty('--x', x + 'vw');
+    star.style.setProperty('--y', y + 'vh');
+    star.style.setProperty('--tx', dx + 'vw');
+    star.style.setProperty('--ty', dy + 'vh');
+    star.style.setProperty('--rot', randomBetween(-160, 160) + 'deg');
+    star.style.setProperty('--size', randomBetween(14, 27) + 'px');
+    star.style.setProperty('--tail', randomBetween(25, 70) + 'px');
+    star.style.setProperty('--angle', angle + 'deg');
+    star.style.setProperty('--duration', duration + 's');
+    star.style.setProperty('--delay', delay + 's');
+    star.style.color = palette[Math.floor(Math.random() * palette.length)];
+    starStage.appendChild(star);
+    star.addEventListener('animationend', () => star.remove(), { once: true });
+    lastStarEnd = Math.max(lastStarEnd, duration + delay);
+  }
+
+  // Important: reveal the declaration only after the last star's flight is complete.
+  revealTimer = window.setTimeout(() => {
+    starStage.querySelectorAll('.flying-star').forEach((node) => node.remove());
+    loveMessage.classList.add('show');
+    starsBtn.textContent = 'Хочу увидеть звёзды ещё раз';
+    resetTimer = window.setTimeout(() => {
+      loveMessage.classList.remove('show');
+      sequenceRunning = false;
+      starsBtn.disabled = false;
+      starsBtn.innerHTML = '<span aria-hidden="true">✧</span> Пусть летят звёзды <span aria-hidden="true">✦</span>';
+    }, 5200);
+  }, lastStarEnd * 1000 + 220);
+}
+starsBtn.addEventListener('click', launchStars);
+</script>
+</body>
+</html>
